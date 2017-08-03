@@ -1,0 +1,380 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/20px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+  color: #666;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ff8400;
+  text-decoration: none;
+}
+body {
+  font-family: "微软雅黑";
+  background: #f9f9f9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.header {
+  height: 0.94rem;
+  background-color: #fa3432;
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-left: 0.18rem;
+  padding-right: 0.3rem;
+}
+.header .logo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.header .logo h1 {
+  font-size: 0.3rem;
+}
+.header .logo img {
+  width: 0.47rem;
+  height: 0.49rem;
+  margin-right: 0.12rem;
+}
+.header .dr {
+  display: flex;
+  align-items: center;
+}
+.header .dr a {
+  color: #fff;
+}
+.topnav {
+  background-color: #fff;
+  height: 0.86rem;
+  font-size: 0.24rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.topnav a {
+  color: #4b4a4a;
+}
+.topnav .on {
+  color: #ff3636;
+}
+.swipe {
+  position: relative;
+  overflow: hidden;
+}
+.swipe .swipe-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.swipe .swipe-wrap img {
+  width: 100%;
+}
+.swipe .swipe-wrap div {
+  float: left;
+  position: relative;
+}
+.swipe .indirector {
+  position: absolute;
+  left: 50%;
+  bottom: 0.15rem;
+}
+.swipe .indirector span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.swipe .indirector .on {
+  background-color: red;
+}
+.usernav {
+  background-color: #fff;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.usernav .iconfont {
+  display: block;
+  height: 0.9rem;
+  width: 0.9rem;
+  text-align: center;
+  line-height: 0.9rem;
+  font-size: 0.45rem;
+  border-radius: 30%;
+  color: #fff;
+  margin: 0 auto;
+}
+.usernav .icon-lock-fill {
+  background-color: #4099e9;
+}
+.usernav .icon-women {
+  background-color: #fb6361;
+}
+.usernav .icon-zhiyin {
+  background-color: #40c8b0;
+}
+.usernav .icon-wenti {
+  background-color: #ffae28;
+}
+.usernav span {
+  text-align: center;
+  margin-top: 0.1rem;
+  font-size: 0.26rem;
+  display: block;
+}
+.hotproduct .hot-title {
+  padding-left: 0.26rem;
+  padding-right: 0.4rem;
+  border-top: 1px solid #e9e9e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0.95rem;
+}
+.hotproduct .hot-title .hot-h3 {
+  font-size: 0.3rem;
+  color: #494848;
+  width: 2.3rem;
+}
+.hotproduct .hot-title .ico-hot {
+  display: inline-block;
+  height: 0.44rem;
+  width: 0.44rem;
+  vertical-align: middle;
+}
+.hotproduct .hot-title a {
+  font-size: 0.26rem;
+}
+.hotproduct .product {
+  background-color: #fff;
+  margin-left: 0.23rem;
+  margin-right: 0.23rem;
+  margin-bottom: 0.25rem;
+  border: 2px solid #e9e8e8;
+  padding: 0.25rem;
+}
+.hotproduct .product .pro-title {
+  display: flex;
+  justify-content: space-between;
+}
+.hotproduct .product .pro-title h4 {
+  font-size: 0.28rem;
+}
+.hotproduct .product .pro-title .fan,
+.hotproduct .product .pro-title .iconfont {
+  align-self: baseline;
+  font-size: 0.2rem;
+  height: 0.3rem;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 0.3rem;
+  border-radius: 15%;
+}
+.hotproduct .product .pro-title .fan {
+  background-color: #ffab37;
+  width: 0.85rem;
+  margin-right: 0.05rem;
+}
+.hotproduct .product .pro-title .iconfont {
+  background-color: #ff7404;
+  width: 0.33rem;
+}
+.hotproduct .product .data {
+  margin-top: 0.28rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hotproduct .product .data .data1 strong {
+  font-size: 0.38rem;
+  color: #fb4034;
+}
+.hotproduct .product .data .data1 em {
+  font-size: 0.24rem;
+  color: #ff7900;
+}
+.hotproduct .product .data .data2 {
+  font-size: 0.25rem;
+  color: #9a9b9c;
+  line-height: 0.3rem;
+}
+.hotproduct .product .data .data2 strong {
+  color: #3d3c3c;
+}
+.dynamic .dynamic-title {
+  height: 0.5rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.26rem;
+  padding-right: 0.4rem;
+  border-bottom: 2px solid #e6e6e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dynamic .dynamic-title .dynamic-h3 {
+  font-size: 0.3rem;
+  color: #494848;
+  width: 2.3rem;
+}
+.dynamic .dynamic-title .dynamic-hot {
+  display: inline-block;
+  height: 0.44rem;
+  width: 0.44rem;
+  vertical-align: middle;
+}
+.dynamic .dynamic-title .ico-dynamic {
+  display: inline-block;
+  vertical-align: middle;
+}
+.dynamic .itemlist {
+  border-bottom: 2px solid #e6e6e5;
+  background-color: #fff;
+  padding-left: 0.23rem;
+  padding-right: 0.23rem;
+}
+.dynamic .itemlist .ietm {
+  padding-top: 0.35rem;
+}
+.dynamic .itemlist .ietm a {
+  display: flex;
+}
+.dynamic .itemlist .ietm img {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 20%;
+  flex: 0 0 auto;
+  margin-right: 0.23rem;
+}
+.dynamic .itemlist .ietm div {
+  flex: 1 1 auto;
+}
+.dynamic .itemlist .ietm div h4 {
+  margin-top: 0.1rem;
+  font-size: 0.28rem;
+  color: #494848;
+}
+.dynamic .itemlist .ietm div p {
+  margin-top: 0.25rem;
+  font-size: 0.24rem;
+  display: flex;
+  justify-content: space-between;
+}
+.dynamic .itemlist .mb {
+  margin-bottom: 0.35rem;
+}
+.footer {
+  border-top: 2px solid #ededec;
+  background-color: #fff;
+  margin-top: 0.23rem;
+  height: 1.65rem;
+}
+.footer .links {
+  padding-top: 0.45rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.28rem;
+  color: #494848;
+}
+.footer .copyright {
+  margin-top: 0.22rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.26rem;
+  color: #9a9b9c;
+}
