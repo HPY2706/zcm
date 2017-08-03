@@ -319,6 +319,8 @@ h6 {
   vertical-align: middle;
 }
 .dynamic .dynamic-title .ico-dynamic {
+  height: 0.44rem;
+  width: 0.44rem;
   display: inline-block;
   vertical-align: middle;
 }
