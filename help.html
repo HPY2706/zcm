@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>招财猫-帮助中心</title>
+		<link rel="stylesheet" type="text/css" href="css/help.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script type="text/javascript">
+			var fs = document.documentElement.clientWidth / 750 * 100;
+			document.querySelector("html").style.fontSize = fs + "px";
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<a href="index.html"><i class="iconfont icon-fanhui"></i></a>
+			<span>帮助中心</span>
+			<i class="iconfont icon-caidan" id="caidan"></i>
+		</header>
+		<section class="conter">
+			<a class="con" href="###">
+				<i class="iconfont icon-zhengmian icon-bgc"></i>
+				<span class="mro">了解招财猫</span>
+				<i class="iconfont icon-start icon-r"></i>
+			</a>
+			<a class="con" href="###">
+				<i class="iconfont icon-wode icon-bgc"></i>
+				<span class="mro">注册/登录</span>
+				<i class="iconfont icon-start icon-r"></i>
+			</a>
+			<div class="service ">
+				<i class="iconfont icon-dianhua"></i>
+				<div>
+					<p class="hotphone">拨打客服热线：<span>400-991-7005</span></p>
+					<p class="time">周一至周五  9: 00 -- 20: 00  周六至周日  9: 00 -- 18: 00</p>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="footer">
+			<p class="links">
+				<a href="###">触屏版</a>
+				<a href="###">电脑版</a>
+				<a href="###">APP下载</a>
+			</p>
+			<p class="copyright">
+				&copy;2017招财猫理财 浙ICP备14041616号
+			</p>
+		</footer>
+		<!--遮罩层-->
+		<div class="zhezhao" id="zhezhao">
+			<div class="memu">
+				<a href="index.html">
+					<i class="iconfont icon-zhuye"></i>
+					首页
+				</a>|
+				<a href="###">
+					<i class="iconfont icon-suo"></i>
+					安全保障
+				</a>|
+				<a href="###">
+					<i class="iconfont icon-chongzhi"></i>
+					我要投资
+				</a>|
+				<a href="###">
+					<i class="iconfont icon-women"></i>
+					账户中心
+				</a>
+			</div>
+		</div>
+		<script src="js/zeptoJs/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zeptoJs/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zeptoJs/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//遮罩层
+			$(function(){
+				$("#caidan").on("tap",function(){
+					$("#zhezhao").toggle();
+				});
+				$("#zhezhao").on("touchmove",function(e){
+					e.preventDefault();
+				});
+			});
+		</script>
+	</body>
+</html>

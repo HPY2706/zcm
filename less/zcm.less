@@ -2,12 +2,111 @@
 
 .reset-sina();
 
-@fontsize:100px;
-
-.h(@v){height: @v * @fontsize / 750 * 1rem;};
-.w(@v){width: @v * @fontsize / 750 * 1rem;}
 
 
+body{font-family: "微软雅黑"; background: #f9f9f9;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+section,div,p,h1,h2,h3,h4,h5,h6,input{box-sizing: border-box;}
+em,i{font-style: normal;}
+
+
+//头部公共类
+.detail-header(){
+    .h(92);
+    background-color: #fa3432;
+    color: #fff;
+    .fs(28);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .pl(30);
+    .pr(30);
+    .iconfont{
+        .fs(28);
+        color: #fff;
+    }
+}
+
+//底部公共类
+.index-footer(){
+    border-top: 2px solid #ededec;
+    background-color: #fff;
+    .mt(23);
+    .h(165);
+    .links{
+        .pt(45);
+        display: flex;
+        justify-content: center;
+        .fs(28);
+        color: #494848;
+    }
+    .copyright{
+        .mt(22);
+        display: flex;
+        justify-content: center;
+        .fs(26);
+        color: #9a9b9c;
+    }
+}
+
+//遮罩层
+.detail-zhezhao(){
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+    .memu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        .mt(92);
+        .h(150);
+        .fs(70);
+        color: #f00;
+        background-color: #fff;
+        a{
+            color: #f00;
+            .fs(30);
+            width: 25%;
+            text-align: center;
+            .lh(42);
+        }
+    }
+    .iconfont{
+        .fs(40);
+        display: block;
+        text-align: center;
+        
+    }
+}
+
+@fontsize:100;
+
+.h(@v){height: @v/@fontsize*1rem;}
+.w(@v){width: @v/@fontsize*1rem;}
+.fs(@v){font-size: @v/@fontsize*1rem;}
+.pr(@v){padding-right: @v/@fontsize*1rem;}
+.pl(@v){padding-left: @v/@fontsize*1rem;}
+.mr(@v){margin-right: @v/@fontsize*1rem;}
+.ml(@v){margin-left: @v/@fontsize*1rem;}
+.bot(@v){bottom: @v/@fontsize*1rem;}
+.lh(@v){line-height: @v/@fontsize*1rem;}
+.mt(@v){margin-top: @v/@fontsize*1rem;}
+.mb(@v){margin-bottom: @v/@fontsize*1rem;}
+.p(@v){padding: @v/@fontsize*1rem;}
+.pb(@v){padding-bottom: @v/@fontsize*1rem;}
+.pt(@v){padding-top: @v/@fontsize*1rem;}
+.l(@v){left: @v/@fontsize*1rem;}
+.t(@v){top: @v/@fontsize*1rem;}
+.r(@v){right: @v/@fontsize*1rem;}
+.b(@v){bottom: @v/@fontsize*1rem;}
 
 
 
